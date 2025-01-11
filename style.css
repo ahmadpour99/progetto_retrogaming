@@ -1,0 +1,261 @@
+*{
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3, .h1, .h2, .h3{
+    font-family: 'Arial', sans-serif;
+}
+
+/* Variabili */
+:root{
+    /* Le variabili in CSS sono esattamente come delle proprietá, quindi una coppia di chiave-valore. */
+    --bl: rgb(0, 82, 255);
+    --lb: rgb(216, 249, 255);
+    --w: rgb(247, 247, 247);
+}
+
+body{
+    background-color: var(--lb);
+    color: var(--w);
+    margin-right: -100px;
+}
+
+.bg-bl{
+    background-color: var(--bl);
+}
+
+.bg-lb{
+    background-color: var(--lb);
+}
+
+.bg-w{
+    background-color: var(--w);
+}
+
+.text-bl{
+    color: var(--bl);
+}
+
+.text-lb{
+    color: var(--lb);
+}
+
+.text-w{
+    color: var(--w);
+}
+
+.border-w{
+    border: 2px solid var(--w);
+}
+
+.border-bl{
+    border: 2px solid var(--bl);
+}
+
+
+
+/* Header */
+
+.header-custom{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 82, 255, 0.3), rgba(0, 82, 255, 0.3)), url(./bg-1.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+
+/* Navbar */
+
+.navbar{
+    min-height: 8vh;
+}
+
+.nav-link{
+    color: var(--w);
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: var(--w);
+}
+
+.logo{
+    width: 50px;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.iscriviti{
+    background-repeat: no-repeat;
+    background-image: url(./bg-2.jpg);
+    background-size: cover;
+}
+
+.box{
+    width: 600px;
+    
+    background: #1b1540;
+    box-shadow: 0px 0px 10px 4px #aaa;
+    
+    /* for center */
+    margin: 20px auto;
+    margin-top: 120px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+
+
+#info{
+    background-repeat: no-repeat;
+    background-image: url(./bg-3.jpg);
+    background-size: cover;
+}
+
+#footer{
+    background-color: #212529;
+}
+
+
+.box form .inputBox {
+    position: relative;
+  }
+  
+  .box form .inputBox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    outline: none;
+    background: transparent;
+  }
+  
+  .box form .inputBox input:valid ~ label,
+  .box form .inputBox input:focus ~ label {
+    top: -25px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+  }
+  
+  .box form .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    pointer-events: none;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  
+  .box form input[type="submit"] {
+    background-color: yellow;
+    border: none;
+    outline: none;
+    color: #000;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 350px;
+    height: 50px;
+    
+  }
+
+/* Buttons */
+
+.button_iscriviti{
+    font-size:14px;
+    font-family:Arial;
+    width:200px;
+    height:55px;
+    border-width:1px;
+    color: yellow;
+    border-color: yellow;
+    border-top-left-radius:28px;
+    border-top-right-radius:28px;
+    border-bottom-left-radius:28px;
+    border-bottom-right-radius:28px;
+    background: transparent;
+}
+
+.button-custom{
+    height: 70px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    position: relative;
+}
+
+.top-left{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 2px solid var(--w);
+    border-left: 2px solid var(--w);
+}
+
+.top-right{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 2px solid var(--w);
+    border-right: 2px solid var(--w);
+}
+
+.bottom-right{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 2px solid var(--w);
+    border-right: 2px solid var(--w);
+}
+
+.bottom-left{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid var(--w);
+    border-left: 2px solid var(--w);
+}
+
+/* Positioned */
+
+.col-left{
+    position: relative;
+    top: -30px;
+    left: 30px;
+    background-color: var(--lb);
+    transition: 0.5s;
+}
+
+.col-left:hover{
+    top: 0px;
+    left: 0px;
+}
+
+@media screen and (max-width: 600px){
+    .col-left{
+        position: static;
+    }
+}
